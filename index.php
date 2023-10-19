@@ -1,5 +1,7 @@
 <?php
 
+ob_implicit_flush();
+
 echo "Hello Worlds!<p>";
 
 echo "Now attempting connection to LDAP server:<br>";
