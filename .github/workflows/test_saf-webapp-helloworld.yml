@@ -23,7 +23,7 @@ jobs:
 
       - name: Check if composer.json exists
         id: check_files
-        uses: andstor/file-existence-action@v1
+        uses: andstor/file-existence-action@v2
         with:
           files: 'composer.json'
 
@@ -60,7 +60,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'saf-webapp-helloworld-test'
+          app-name: 'saf-webapp-helloworld'
           slot-name: 'test'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_37E416E984564470A5E12FDF551FF334 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CE34FB4D5EBC42FBA72BEE3D3CD45009 }}
           package: .
