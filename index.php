@@ -4,6 +4,7 @@ ob_implicit_flush();
 
 echo "Hello Worlds!<p>";
 
+/*
 $service_port = getenv('PORT');
 $server = getenv('SERVER');
 
@@ -11,7 +12,6 @@ $address = gethostbyname($server);
 
 echo "Now attempting connection to server \"$server\":<br>";
 
-/* Create a TCP/IP socket. */
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 if ($socket === false) {
     echo "socket_create() failed: reason: " . socket_strerror(socket_last_error()) . "\n";
@@ -29,5 +29,6 @@ if ($result === false) {
 
 socket_close($socket);
 echo "Closed socket.";
+*/
 
 ?>
