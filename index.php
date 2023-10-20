@@ -4,9 +4,8 @@ ob_implicit_flush();
 
 echo "Hello Worlds!<p>";
 
-/*
-$service_port = getenv('PORT');
-$server = getenv('SERVER');
+$service_port = getenv('SAIT_PORT_NUMBER');
+$server = getenv('SAIT_SERVER_NAME');
 
 $address = gethostbyname($server);
 
@@ -29,6 +28,5 @@ if ($result === false) {
 
 socket_close($socket);
 echo "Closed socket.";
-*/
 
 ?>
