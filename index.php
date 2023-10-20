@@ -4,10 +4,12 @@ ob_implicit_flush();
 
 echo "Hello Worlds!<p>";
 
-echo "Now attempting connection to LDAP server:<br>";
+$service_port = getenv('PORT');
+$server = getenv('SERVER');
 
-$service_port = 636;
-$address = gethostbyname('registry.northwestern.edu');
+$address = gethostbyname($server);
+
+echo "Now attempting connection to server \"$server\":<br>";
 
 /* Create a TCP/IP socket. */
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
