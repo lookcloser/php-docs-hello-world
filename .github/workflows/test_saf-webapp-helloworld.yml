@@ -61,6 +61,6 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'saf-webapp-helloworld'
-          slot-name: 'saf-webapp-helloworld-test'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_37E416E984564470A5E12FDF551FF334 }}
+          slot-name: 'test'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CE34FB4D5EBC42FBA72BEE3D3CD45009 }}
           package: .
