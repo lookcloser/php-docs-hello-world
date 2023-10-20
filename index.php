@@ -2,7 +2,7 @@
 
 ob_implicit_flush();
 
-echo "<h1>Network Connection Tester</h1><p>";
+echo "<h1>Network Connection Tester!</h1><p>";
 
 $service_port = getenv('SAIT_PORT_NUMBER');
 $server = getenv('SAIT_SERVER_NAME');
