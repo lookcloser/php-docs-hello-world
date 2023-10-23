@@ -62,5 +62,5 @@ jobs:
         with:
           app-name: 'saf-webapp-helloworld'
           slot-name: 'prodblue'
-          publish-profile: ${{ AZURE_WEBAPP_PUBLISH_PROFILE_PRODBLUE }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_PRODBLUE }}
           package: .
